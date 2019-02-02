@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/topmenu.css" />
+    <title>Sell</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="" logo></div>
+      <div class="menu">
+        <ul>
+          <a href="#">
+            <li>
+              <span><i class="fas fa-home"></i> หน้าแรก</span>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <span><i class="fas fa-users"></i> จัดการลูกค้า</span>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <span><i class="fas fa-car"></i> คลังรถ</span>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <span><i class="fas fa-user-shield"></i> จัดการผู้ใช้งาน</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="topmenu">
+      <div class="float-left"><i class="fas fa-bars btn-sidebar"></i></div>
+
+      <div class="float-right">
+        <div class="dropdown">
+          <button
+            class="btn btn-user dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Name Lastname
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">LOGOUT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="title">
+        <span><i class="fas fa-car"></i> &nbsp;ขายรถ</span>
+        <hr />
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="ป้อนรุ่นรถที่ต้องการค้นหา"
+            aria-label="ป้อนรุ่นรถที่ต้องการค้นหา"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              <span><i class="fas fa-search"> ค้นหา </i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Brand</th>
+            <th scope="col">Img</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="height : 100%">
+            <td>Nissan</td>
+            <td style="width: 500px;">
+              <img
+                src="D:/59161109/WebPro/Img/gtrnismo.png"
+                alt="..."
+                class="img-thumbnail"
+                style="width:500px"
+              />
+            </td>
+
+            <td style="display:flex ; justify-content: flex-end ; border-top : 0px  ; align-items: flex-end ; height : 250px">
+              
+                <a class="btn btn-primary" href="#" role="button">ดูรายละเอียด</a>
+            
+            </td>
+          </tr>
+
+          <tr>
+            <td>Honda</td>
+            <td style="width: 500px;">
+              <img
+                src="D:/59161109/WebPro/Img/civic.png"
+                alt="..."
+                class="img-thumbnail"
+                style="width:500px"
+              />
+            </td>
+            <td style="display:flex ; justify-content: flex-end ; align-items: flex-end ; height : 380px">
+              
+                <a class="btn btn-primary" href="#" role="button">ดูรายละเอียด</a>
+            
+            </td>
+          </tr>
+
+          <tr>
+            <td>Honda</td>
+            <td>
+              <img
+                src="D:/59161109/WebPro/Img/crv.png"
+                alt="..."
+                class="img-thumbnail"
+                style="width:500px"
+              />
+            </td>
+            <td style="display:flex ; justify-content: flex-end  ; align-items: flex-end ; height : 380px">
+              
+                <a class="btn btn-primary" href="#" role="button">ดูรายละเอียด</a>
+            
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script>
+    $(".btn-sidebar").on("click", function() {
+      $(".sidebar").toggleClass("show");
+      $(".btn-sidebar").toggleClass("btn-sidebar-2");
+    });
+  </script>
+</html>
